@@ -12,6 +12,7 @@ import { DisplayPriceInRupees } from '../utils/DisplayPriceInRupees';
 import { useGlobalContext } from '../provider/GlobalProvider';
 import DisplayCartItem from './DisplayCartItem';
 
+
 const Header = () => {
     const [ isMobile ] = useMobile()
     const location = useLocation()
@@ -158,6 +159,7 @@ const Header = () => {
                 <DisplayCartItem close={()=>setOpenCartSection(false)}/>
             )
         }
+        
     </header>
   )
 }
